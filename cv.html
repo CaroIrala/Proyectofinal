@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cv.css">
+    
+    <title>Curriculm ARGENTINA PROGRAMA</title>
+
+</head>
+
+<body>
+    
+    <header>
+        <div id="imagen">
+            <img src="img/fotocv.jpg" alt="foto">
+        </div>
+        
+        <div id="titulo">
+            <h1>  CAROLINA IRALA </h1>
+            <h2> Perfil Comercial/Atencion al cliente</h2>
+        </div>
+            
+    </header>
+    
+    <main>
+        
+        <div id="perfil">
+            <h2><button id="toggleBtn">Acerca de mi</button></h2>
+           
+            <div id="additionalInfo" style="display:none;">
+            <p> Hola! Tengo disponibilidad full time <br> experiencia en supermercados y venta <br> licencia de conducir de moto A3 <br> conocimientos en informatica <br> busco crecer profecionalmente<p> 
+            </div>
+
+        <div id="habilidades">
+
+            <h2>Habilidades</h2>
+
+            <div>
+                <p>LIDERAZGO</p>
+                <meter min="0" max="100"
+                low="25" high="75"
+                optimum="100" value="75">
+            </div>
+
+            <div>
+                <p>PROACTIVA</p>
+                <meter min="0" max="100"
+                low="25" high="75"
+                optimum="100" value="75">
+            </div>
+            
+            <div>
+                <p>EMPATIA</p>
+                <meter min="0" max="100"
+                low="25" high="75"
+                optimum="100" value="100">
+            </div>
+
+            <div>
+            <p>COMPAÑERISMO</p>
+            <meter min="0" max="100"
+            low="25" high="75"
+            optimum="100" value="75">
+            </div>
+
+        
+        </div>
+    
+    </div>
+
+        <div id="datos">
+        
+        <div>
+            <h2>Datos personales</h2>
+                <ul>
+                    <li id="dire"> Lima 799 - Buenos Aires</li>
+                    <li id="email">caro@gmail.com</li>
+                    <li id="cell">123-878787</li>
+                    <li id="link"> linked in: Carolinairala</li>
+                </ul>
+        </div>
+        
+        <div>
+            <h2>Educacion</h2>
+            <ul>
+                <li>Secundario Completo: Humanidades y Cs.Sociales en CDE Bs As</li>
+                <li>Terceario en curso: Desarrollo Web en CD Buenos Aires</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Experiencia laboral</h2>
+            <ul>
+                <li>Shopper - (2019/2022) PEDIDOS YA</li>
+                <li>Delibery - (2018/2019) PEDIDOS YA</li>
+                <li>Secretaria - (06/06/22 al 06/07/22) LOCAL PRESTAMOS</li>
+                <li>Vendedora - (2023 actualmente) - SHOPPING</li>
+            </ul>
+        </div>
+    
+        <div>
+            <h2>Idiomas</h2>
+                <ul>
+                    <li>Ingles: basico</li>
+                </ul>
+            </div>
+
+        <div>
+            <h2>Conocimientos</h2>
+            <ul>
+                <li>Programas de diseño nivel basico: C / Photoshop / illustrator / Corel Draw</li>
+                <li>Paquete Office nivel medio: Power Ponit / Word / Exel </li>
+                <li> Eduacion IT: front end - Curso intensivo terminado</li>
+            </ul>
+        </div>
+
+        </div>
+
+    </main> 
+    <footer>
+            <div  id="particles-js">
+
+            </div> 
+                
+                <div id="formulario">      
+                    <H3>Contactar para entrevista</H3>
+                    
+                        <form>
+                            <div>
+                                <input type="text" id="empresa" name="empresa" placeholder="empresa"><br>
+                                
+                                <input type="email" id="email" name="email" placeholder="email"><br>
+                                
+                                <input type="text" id="cargo" name="cargo" placeholder="cargo" max="10"><br>
+                                
+                                <textarea id="mensaje" name="mensaje" placeholder="mensaje" maxlength="30"></textarea><br>
+                                <input type="submit" value="ENVIAR">
+                            </div>
+                        </form>
+                </div>
+                    
+    </footer>
+    <script>
+
+            const toggleBtn = document.getElementById("toggleBtn");
+            const additionalInfo = document.getElementById("additionalInfo");
+            
+            toggleBtn.addEventListener("click", function() {
+                if (additionalInfo.style.display === "none") {
+            additionalInfo.style.display = "block";
+            toggleBtn.innerText = "Acerca de mi";
+        } else {
+            additionalInfo.style.display = "none";
+            toggleBtn.innerText = "Mostrar Información Adicional";
+        }
+        });
+    </script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="cv.js"></script>
+
+</body>
+</html>
